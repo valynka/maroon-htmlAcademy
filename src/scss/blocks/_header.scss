@@ -1,0 +1,19 @@
+.header {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        flex-grow: 1;
+    }
+
+    &__personal {
+        display: flex;
+        gap: 30px;
+    }
+}

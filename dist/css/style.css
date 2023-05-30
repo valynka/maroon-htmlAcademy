@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&display=swap");
+@import "../../node_modules/normalize.css/normalize.css";
+.header {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  flex-grow: 1;
+}
+.header__personal {
+  display: flex;
+  gap: 30px;
+}
+
+.nav {
+  margin-right: 50px;
+}
+.nav__list {
+  display: flex;
+  gap: 35px;
+  margin: 0;
+}
+.nav__item {
+  list-style: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: #122947;
+}
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+}
