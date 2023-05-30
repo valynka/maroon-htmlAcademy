@@ -1,10 +1,11 @@
 .nav {
-    margin-right: 50px;
+    
 
   &__list {
     display: flex;
     gap: 35px;
     margin: 0;
+    padding-left: 0;
   }
 
   &__item {

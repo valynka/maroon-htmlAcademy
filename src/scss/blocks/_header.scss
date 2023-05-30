@@ -12,6 +12,10 @@
         flex-grow: 1;
     }
 
+    &__nav {
+        margin-right: 50px;
+    }
+
     &__personal {
         display: flex;
         gap: 30px;

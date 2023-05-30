@@ -13,18 +13,19 @@
 .header__logo {
   flex-grow: 1;
 }
+.header__nav {
+  margin-right: 50px;
+}
 .header__personal {
   display: flex;
   gap: 30px;
 }
 
-.nav {
-  margin-right: 50px;
-}
 .nav__list {
   display: flex;
   gap: 35px;
   margin: 0;
+  padding-left: 0;
 }
 .nav__item {
   list-style: none;
