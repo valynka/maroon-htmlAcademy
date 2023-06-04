@@ -1,23 +1,200 @@
 .header {
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 98px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	position: absolute;
+	top: 40px;
+	left: 0;
 
-    &__logo {
-        flex-grow: 1;
-    }
+	width: 100%;
 
-    &__nav {
-        margin-right: 50px;
-    }
+	@media screen and (max-width: $md) {
+		top: 30px;
+	}
 
-    &__personal {
-        display: flex;
-        gap: 30px;
-    }
+	&__body {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 98px;
+
+		@media screen and (max-width: $lg) {
+			padding-right: 45px;
+			padding-left: 45px;
+		}
+
+		@media screen and (max-width: $sm) {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+
+	&__logo {
+		flex-grow: 1;
+
+		@media screen and (max-width: $lg) {
+			order: 2;
+
+			text-align: center;
+		}
+	}
+
+	&__logo-img {
+		width: 131px;
+		height: 21px;
+
+		@media screen and (max-width: $md) {
+			width: 85px;
+			height: 13px;
+		}
+	}
+
+	&__burger {
+		display: none;
+
+		@media screen and (max-width: $lg) {
+			position: relative;
+
+			display: block;
+			width: 24px;
+			height: 14px;
+
+			span {
+				position: absolute;
+				top: 6px;
+				left: 0;
+
+				display: block;
+				width: 100%;
+				height: 2px;
+
+				background: $blue;
+
+				transition: all 0.3s ease 0s;
+			}
+
+			&::before,
+			&::after {
+				position: absolute;
+				left: 0;
+				z-index: 5;
+
+				display: block;
+				width: 100%;
+				height: 2px;
+
+				background: $blue;
+
+				transition: all 0.3s ease 0s;
+
+				content: "";
+			}
+
+			&::before {
+				top: 0;
+			}
+
+			&::after {
+				bottom: 0;
+			}
+		}
+
+		@media screen and (max-width: $md) {
+			width: 22px;
+			height: 13px;
+
+			span {
+				top: 5px;
+			}
+		}
+
+		&_is-open {
+			span {
+				transform: scale(0);
+			}
+
+			&::before {
+				top: 7px;
+
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				top: 7px;
+
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&__nav {
+		margin-right: 50px;
+    
+
+		@media screen and (max-width: $lg) {
+			position: fixed;
+			top: 65px;
+			left: 0;
+
+			order: 1;
+			width: 100%;
+			height: calc(100% - 65px);
+			margin-right: 24px;
+			overflow: auto;
+
+			background: $gray-200;
+			transform: translateX(-200%);
+
+			transition: all 0.3s ease 0s;
+
+			&_is-open {
+				transform: translateX(0);
+			}
+		}
+	}
+
+	&__nav-list {
+		@media screen and (max-width: $lg) {
+			display: block;
+			padding-top: 30px;
+			padding-left: 45px;
+      
+		}
+
+		@media screen and (max-width: $sm) {
+			padding-left: 15px;
+      
+		}
+	}
+
+	&__nav-item {
+		@media screen and (max-width: $lg) {
+			margin-bottom: 15px;
+
+			font-size: 24px;
+		}
+	}
+
+	&__personal {
+		display: flex;
+		gap: 30px;
+
+		@media screen and (max-width: $lg) {
+			order: 3;
+		}
+	}
+
+	&__icon {
+		width: 14px;
+		height: 16px;
+
+		@media screen and (max-width: $md) {
+			width: 14px;
+			height: 16px;
+		}
+
+		&:hover {
+			filter: brightness(0) saturate(100%) invert(29%) sepia(17%) saturate(907%)
+				hue-rotate(173deg) brightness(97%) contrast(87%);
+		}
+	}
 }

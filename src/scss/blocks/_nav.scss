@@ -1,19 +1,21 @@
 .nav {
-    
+	&__list {
+		display: flex;
+		gap: 35px;
+		margin: 0;
+		padding-left: 0;
+	}
 
-  &__list {
-    display: flex;
-    gap: 35px;
-    margin: 0;
-    padding-left: 0;
-  }
+	&__item {
+		list-style: none;
+	}
 
-  &__item {
-    list-style: none;
-  }
+	&__link {
+		color: $blue;
+		text-decoration: none;
 
-  &__link {
-    text-decoration: none;
-    color: $blue;
-  }
+		&:hover {
+			color: $blue-light;
+		}
+	}
 }

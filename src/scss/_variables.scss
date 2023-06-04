@@ -1,9 +1,26 @@
+// colors
+
 $blue: #122947; // main text
-$manatee: #9A9DA0;  // text in cards
-$alto: #D1D1D1; // line in footer
-$dusty-gray: #959595; // copyright text
-$pampas: #F4F1ED; // section background
-$mercury: #E5E5E5;  // main background
+$blue-light: rgba(18, 41, 71, 0.8);
+
+$gray-100: #F8F8F6;  // main background
+$gray-200: #F4F1ED; // section background
+$gray-300: #D1D1D1; // line in footer
+$gray-400: #B3BAC1; // button border
+$gray-400-light: rgba(179, 186, 193, 0.5);
+$gray-500: #9A9DA0;  // text in cards
+$gray-600: #959595; // copyright text
+
+// breakpoints
+
+$sm: 576px;
+$md: 767px;
+$lg: 991px;
+$xl: 1150px;
+
+
+
+
 
 
 

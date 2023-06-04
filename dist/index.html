@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +9,90 @@
 </head>
 
 
-    <body>
-        <div class="container">
-            <header class="header">
-  <a href="#" class="header__logo">
-    <img
-      src="../img/icons/MAROON.svg"
-      alt="логотип компании Maroon"
-      class="logo"
-    />
-  </a>
-  <nav class="header__nav nav">
-    <ul class="nav__list">
-      <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-    </ul>
-  </nav>
-  <div class="header__personal">
-    <a href="#"
-      ><img
-        src="../img/icons/person.svg"
-        alt="иконка личного кабинета"
-        class="header__icon"
-    /></a>
-    <a href="#"
-      ><img
-        src="../img/icons/cart.svg"
-        alt="иконка корзины"
-        class="header__icon"
-    /></a>
+  <body>
+    <div class="container">
+      <header class="header">
+  <div class="header__body">
+    <a href="#" class="header__logo">
+      <img
+        src="../img/icons/MAROON.svg"
+        alt="логотип компании Maroon"
+        class="header__logo-img"
+      />
+    </a>
+    
+      <div class="header__burger"><span></span></div>
+      <nav class="nav header__nav">
+        <ul class="nav__list header__nav-list">
+          <li class="nav__item header__nav-item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item header__nav-item"><a href="#" class="nav__link">О нас</a></li>
+          <li class="nav__item header__nav-item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    
+    <div class="header__personal">
+      <a href="#"
+        ><img
+          src="../img/icons/person.svg"
+          alt="иконка личного кабинета"
+          class="header__icon"
+      /></a>
+      <a href="#"
+        ><img
+          src="../img/icons/cart.svg"
+          alt="иконка корзины"
+          class="header__icon"
+      /></a>
+    </div>
   </div>
 </header>
 
-        </div>
-    </body>
+      <main>
+        <section class="main-screen">
+          <div class="main-screen__card">
+            <a href="#" class="card-link">
+  <div class="card-link__card">
+    <picture>
+      <source media="(max-width: 320px)" srcset="img/face-card-mobile.jpg">
+      <source media="(max-width: 1149px)" srcset="img/face-card-tablet.jpg">
+      <source media="(min-width: 1150px)" srcset="img/face-card-desctop.jpg 1x, img/face-card-desctop-2x 2x">
+      <img class="card-link__img" src="img/face-card-desctop.jpg 1x" alt="Средства для ухода за лицом">
+    </picture>
+    <div class="card-link__body">
+      <span>Уход для лица</span>
+      <img src="../img/icons/card-arrow.svg" alt="Стрелка" class="card-link__arrow">
+    </div>
+  </div>
+</a>
+
+
+          </div>
+          
+          <div class="main-screen__info">
+            <h1 class="main-screen__header">MAROON</h1>
+            <div class="main-screen__text">Натуральная косметика для бережного ухода за кожей</div>
+            <button class="main-screen__button button">Подробнее</button>
+          </div>
+          <div class="main-screen__card">
+            <a href="#" class="card-link">
+  <div class="card-link__card">
+    <picture>
+      <source media="(max-width: 320px)" srcset="img/body-card-mobile.jpg">
+      <source media="(max-width: 1149px)" srcset="img/body-card-tablet.jpg">
+      <source media="(min-width: 1150px)" srcset="img/body-card-desctop.jpg 1x, img/body-card-desctop-2x 2x">
+      <img class="card-link__img" src="img/body-card-desctop.jpg 1x" alt="Средства для ухода за телом">
+    </picture>
+    <div class="card-link__body">
+      <span>Уход для тела</span>
+      <img src="../img/icons/card-arrow.svg" alt="Стрелка" class="card-link__arrow">
+    </div>
+  </div>
+</a>
+
+          </div>          
+        </section>
+      </main>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

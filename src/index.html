@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @@include('html/head.html', {
-        "title": "Главная"
-    })
+  @@include('html/head.html', { "title": "Главная" })
 
-    <body>
-        <div class="container">
-            @@include('html/header.html')
-        </div>
-    </body>
+  <body>
+    <div class="container">
+      @@include('html/header.html')
+      <main>
+        <section class="main-screen">
+          <div class="main-screen__card">
+            @@include('html/card-link.html', { "src-mob": "img/face-card-mobile.jpg",
+                                              "src-tablet": "img/face-card-tablet.jpg",
+                                              "src-desctop": "img/face-card-desctop.jpg 1x",
+                                              "src-desctop-2x": "img/face-card-desctop-2x 2x",
+                                              "alt": "Средства для ухода за лицом", "card-text": "Уход для лица" })
+
+          </div>
+          
+          <div class="main-screen__info">
+            <h1 class="main-screen__header">MAROON</h1>
+            <div class="main-screen__text">Натуральная косметика для бережного ухода за кожей</div>
+            <button class="main-screen__button button">Подробнее</button>
+          </div>
+          <div class="main-screen__card">
+            @@include('html/card-link.html', { "src-mob": "img/body-card-mobile.jpg",
+                                              "src-tablet": "img/body-card-tablet.jpg",
+                                              "src-desctop": "img/body-card-desctop.jpg 1x",
+                                              "src-desctop-2x": "img/body-card-desctop-2x 2x",
+                                              "alt": "Средства для ухода за телом", "card-text": "Уход для тела" })
+          </div>          
+        </section>
+      </main>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

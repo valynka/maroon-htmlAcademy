@@ -30,6 +30,12 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "sass": "^1.60.0",
+    "stylelint": "^15.6.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.0.0",
     "webp-converter": "^2.2.3",
     "webpack": "^5.77.0",
     "webpack-stream": "^7.0.0"
